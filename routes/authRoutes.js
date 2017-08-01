@@ -8,6 +8,7 @@ module.exports = app => {
 
     app.get('/auth/google/callback', passport.authenticate('google'));
 
+
     //just a test root route
     app.get('/',(req,res)=>{
         res.send('Hello Tom');
