@@ -6,6 +6,7 @@ const  keys           = require('./config/keys');
 
 //const passportConfig =require('./services/passport');  since this does not return anything it can also be written like:
 require('./services/passport');
+require('./models/User');
 
 mongoose.connect(keys.mongoURI);
 
